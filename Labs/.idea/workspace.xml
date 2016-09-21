@@ -4,27 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0406f766-82bf-4867-bf84-9939cf237cd0" name="Default" comment="Refactoring package structure and adding template for next chapter to demonstrate future structure">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ch2/Q1.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Labs/com/cs210/Q4.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/cs210/Q2.java" afterPath="$PROJECT_DIR$/src/com/ch1/Q2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/cs210/Q4.java" afterPath="$PROJECT_DIR$/src/com/ch1/Q4.java" />
+    <list default="true" id="0406f766-82bf-4867-bf84-9939cf237cd0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/allclasses-frame.html" afterPath="$PROJECT_DIR$/documentation/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/allclasses-noframe.html" afterPath="$PROJECT_DIR$/documentation/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/com/cs210/Q4.html" afterPath="$PROJECT_DIR$/documentation/com/cs210/Q4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/com/cs210/package-frame.html" afterPath="$PROJECT_DIR$/documentation/com/cs210/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/com/cs210/package-summary.html" afterPath="$PROJECT_DIR$/documentation/com/cs210/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/com/cs210/package-tree.html" afterPath="$PROJECT_DIR$/documentation/com/cs210/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/index-files/index-1.html" afterPath="$PROJECT_DIR$/documentation/index-files/index-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/index-files/index-2.html" afterPath="$PROJECT_DIR$/documentation/index-files/index-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/index-files/index-3.html" afterPath="$PROJECT_DIR$/documentation/index-files/index-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/index-files/index-4.html" afterPath="$PROJECT_DIR$/documentation/index-files/index-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/index-files/index-5.html" afterPath="$PROJECT_DIR$/documentation/index-files/index-5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/index-files/index-6.html" afterPath="$PROJECT_DIR$/documentation/index-files/index-6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/index-files/index-7.html" afterPath="$PROJECT_DIR$/documentation/index-files/index-7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/overview-tree.html" afterPath="$PROJECT_DIR$/documentation/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/package-list" afterPath="$PROJECT_DIR$/documentation/package-list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ch1/Q2.java" afterPath="$PROJECT_DIR$/src/com/ch1/Q2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ch1/Q4.java" afterPath="$PROJECT_DIR$/src/com/ch1/Q4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ch2/Q1.java" afterPath="$PROJECT_DIR$/src/com/ch2/Q1.java" />
     </list>
     <ignored path="Labs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -478,11 +462,19 @@
       <option name="presentableId" value="Default" />
       <updated>1474433148478</updated>
     </task>
+    <task id="LOCAL-00001" summary="Refactoring package structure and adding template for next chapter to demonstrate future structure">
+      <created>1474439024204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474439024204</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="427" y="12" width="1400" height="1000" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
