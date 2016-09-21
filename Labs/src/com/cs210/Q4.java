@@ -4,6 +4,7 @@ package com.cs210;
  * Chapter 1 Lab - Question 4
  */
 public class Q4 {
+
     /**
      * Program entry point
      * @param args command line arguments
