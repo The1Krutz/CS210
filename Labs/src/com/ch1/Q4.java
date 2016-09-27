@@ -7,6 +7,7 @@ public class Q4 {
 
     /**
      * Program entry point
+     *
      * @param args command line arguments
      */
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class Q4 {
     /**
      * Draws the first figure
      */
-    public static void figure1(){
+    public static void figure1() {
         drawTwoBars();
         drawX();
         drawWhiteSpace();
@@ -27,7 +28,7 @@ public class Q4 {
     /**
      * Draws the second figure
      */
-    public static void figure2(){
+    public static void figure2() {
         drawTwoBars();
         drawX();
         drawTwoBars();
@@ -37,7 +38,7 @@ public class Q4 {
     /**
      * Draws the third figure
      */
-    public static void figure3(){
+    public static void figure3() {
         drawVerticalLine();
         drawTwoBars();
         drawX();
@@ -47,23 +48,23 @@ public class Q4 {
      * Draws two horizontal bars
      */
     public static void drawTwoBars() {
-        allFive();
-        allFive();
+        System.out.println("*****");
+        System.out.println("*****");
     }
 
     /**
      * Draws an X
      */
     public static void drawX() {
-        twoAndFour();
-        threeOnly();
-        twoAndFour();
+        System.out.println(" * * ");
+        System.out.println("  *  ");
+        System.out.println(" * * ");
     }
 
     /**
      * Draws a single blank line
      */
-    public static void drawWhiteSpace(){
+    public static void drawWhiteSpace() {
         System.out.println();
     }
 
@@ -71,29 +72,8 @@ public class Q4 {
      * Draws a single vertical line
      */
     public static void drawVerticalLine() {
-        threeOnly();
-        threeOnly();
-        threeOnly();
-    }
-
-    /**
-     * Outputs an asterisk in all five positions
-     */
-    public static void allFive() {
-        System.out.println("*****");
-    }
-
-    /**
-     * Outputs an asterisk only in positions 2 and 4
-     */
-    public static void twoAndFour() {
-        System.out.println(" * * ");
-    }
-
-    /**
-     * Outputs an asterisk in position 3
-     */
-    public static void threeOnly() {
+        System.out.println("  *  ");
+        System.out.println("  *  ");
         System.out.println("  *  ");
     }
 }
