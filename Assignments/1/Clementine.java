@@ -16,6 +16,9 @@ public class Clementine {
         chorus();
     }
 
+    /**
+     * Prints the song chorus
+     */
     public static void chorus() {
         System.out.println();
         System.out.println("Oh, my darling, oh, my darling");
@@ -24,6 +27,9 @@ public class Clementine {
         System.out.println("Dreadful sorry, Clementine");
     }
 
+    /**
+     * Prints the first verse
+     */
     public static void verseOne() {
         System.out.println("In a cavern, in a canyon");
         System.out.println("Excavating for a mine");
@@ -31,6 +37,9 @@ public class Clementine {
         System.out.println("And his daughter, Clementine");
     }
 
+    /**
+     * Prints the second verse
+     */
     public static void verseTwo() {
         System.out.println("Light she was and like a fairy");
         System.out.println("And her shoes were number nine");
@@ -38,6 +47,9 @@ public class Clementine {
         System.out.println("Sandals were for Clementine");
     }
 
+    /**
+     * Prints the third verse
+     */
     public static void verseThree() {
         System.out.println("Drove she ducklings to the water");
         System.out.println("Every morning just at nine");
