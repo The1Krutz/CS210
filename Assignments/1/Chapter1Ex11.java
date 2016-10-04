@@ -2,8 +2,12 @@
 // Thomas / Kent
 
 public class Chapter1Ex11 {
-    // public static int numRockets = 2;
+    // public static int numRockets = 3;
 
+    /**
+     * Program entry point
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         int numRockets = 2; // default value in case no args are given
 
@@ -11,7 +15,8 @@ public class Chapter1Ex11 {
             // System.out.println(args[0]);
             numRockets = Integer.parseInt(args[0]);
         } catch (Exception ex) {
-            // System.err.println(ex.toString());
+            System.err.println(ex.toString());
+            System.err.println("Using default value, 2 rockets");
             numRockets = 2;
         }
 

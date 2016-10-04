@@ -1,8 +1,4 @@
-package com.ch1;
 
-/**
- * Chapter 1 Lab - Question 4
- */
 public class Q2 {
 
     /**
