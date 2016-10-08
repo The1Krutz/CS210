@@ -1,7 +1,12 @@
 
 /**
- * DrawRocket class
- * Thomas Kent 05 October 2016
+ * @class DrawRocket
+ * Draws a rocket ship with variable dimensions.
+ * If run from the command line, numeric arguments can be passed in to control the height of each rocket section.
+ * Otherwise, baseHeight can be modified to achieve the same effect.
+ *
+ * @author Thomas Kent
+ * @since 05 October 2016
  */
 public class DrawRocket {
 
@@ -10,16 +15,15 @@ public class DrawRocket {
      * @param args command line arguments
      */
     public static void main(String[] args) {
-        int baseHeight;
+        int baseHeight = 3; // set default value here
 
         try {
-            // try to get height from command line args, or use default
+            // try to get height from command line args
             baseHeight = Integer.parseInt(args[0]);
         } catch (Exception ex) {
-            // swallow error and set default height
+            // display error and continue with default height
             System.err.println(ex.toString());
-            System.err.println("Using default height: 3");
-            baseHeight = 3;
+            System.err.println("Using default height: " + baseHeight);
         }
 
         // draw the rocket ship
@@ -39,7 +43,7 @@ public class DrawRocket {
 
     /**
      * Draws the cone, facing up
-     * @param height [description]
+     * @param height height of this figure in number of lines
      */
     public static void drawCone(int height) {
         // calculate width based on height
@@ -86,7 +90,7 @@ public class DrawRocket {
     }
 
     /**
-     * Draws the upper portion of the body, with the cone facing upo
+     * Draws the upper portion of the body, with the cone facing up
      * @param height height of this figure in number of lines
      */
     public static void drawBodyConeUp(int height) {
