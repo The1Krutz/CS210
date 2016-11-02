@@ -4,58 +4,38 @@
 import java.awt.*;
 import java.util.*;
 
-enum Direction {
-    up,
-    down,
-    left,
-    right
-}
-
 public class balls {
     public static Random rand = new Random();
 
-    private class ball {
-        public int x;
-        public int y;
-        public Direction dir;
-        public int size;
-        public Color color;
-
-        public ball(int panelHeight, int panelWidth, Direction startingDirection) {
-            x = rand.nextInt(panelWidth);
-            y = rand.nextInt(panelHeight);
-            dir = startingDirection;
-            size = rand.nextInt(100) + 1;
-
-            color = new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
-        }
-    }
-
-    public static ArrayList<ball> allBalls = new ArrayList<ball>();
-
-
     public static int width = 800;
     public static int height = 600;
+
     public static int b1x;
     public static int b1y;
     public static int b1s;
+
     public static int b2x;
     public static int b2y;
     public static int b2s;
+
     public static int b3x;
     public static int b3y;
     public static int b3s;
+
     public static int b4x;
     public static int b4y;
     public static int b4s;
+
     public static int b5x;
     public static int b5y;
     public static int b5s;
+
     public static String b1d = "down";
     public static String b2d = "down";
     public static String b3d = "down";
     public static String b4d = "down";
     public static String b5d = "down";
+
     public static int ballSize = 50;
 
     public static void main(String[] args) {
@@ -169,4 +149,9 @@ public class balls {
         b4s = rand.nextInt(30) + 1;
         b5s = rand.nextInt(30) + 1;
     }
+
+public static Color randomColor(){
+    return new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256))
+}
+
 }
