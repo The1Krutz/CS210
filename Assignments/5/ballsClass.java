@@ -5,161 +5,121 @@ import java.awt.*;
 import java.util.*;
 
 public class ballsClass {
-    /**
-     *  forget all that chapter 1-5 restriction and DO THIS RIGHT.
-     */
 
+    /**
+     * program entry point
+     * @param args command line args
+     */
+    public static void main(String[] args) {
+        ballRunner a = new ballRunner();
+
+        a.go();
+    }
+}
+
+class ball {
+    private static Random rand = new Random();
+
+    private int y;
+    private int x;
+    private int speed;
+    private String direction;
+    private Color color;
+    private int size;
+
+    public ball(int _x, int _y, String _direction) {
+        x = x;
+        y = y;
+        speed = rand.nextInt(30) + 1;
+        direction = _direction;
+        color = new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
+        size = rand.nextInt(100) + 51;     // random size 50-150
+    }
+
+    public void move(Graphics g) {
+        // System.out.println("2");
+        // System.out.println("" + direction);
+        if (direction.equals("up")) {
+            // System.out.println("2.1.1");
+            y -= speed;
+            if (y <= 0) {
+                direction = "down";
+            }
+        } else if (direction.equals("down")) {
+            // System.out.println("2.1.2");
+            y += speed;
+            if (y >= ballRunner.height) {
+                direction = "up";
+            }
+        } else if (direction.equals("left")) {
+            // System.out.println("2.1.3");
+            x -= speed;
+            if (x <= 0) {
+                direction = "right";
+            }
+        } else if (direction.equals("right")) {
+            // System.out.println("2.1.4");
+            x += speed;
+            if (x >= ballRunner.width - size) {
+                direction = "left";
+            }
+        } else {
+            // System.out.println("2.1.5");
+            System.out.println("INVALID DIRECTION");
+        }
+        // System.out.println("2.2");
+        g.setColor(color);
+        // System.out.println("2.3");
+        g.fillOval(x, y, size, size);
+        // System.out.println("2.4");
+    }
+}
+
+class ballRunner {
     public static Random rand = new Random();
 
     public static int width = 800;
     public static int height = 600;
 
-    public static int b1x;
-    public static int b1y;
-    public static int b1s;
-    public static String b1d = "down";
-    public static Color b1c = randomColor();
+    public ball[] allBalls = new ball[10];
 
-    public static int b2x;
-    public static int b2y;
-    public static int b2s;
-    public static String b2d = "down";
-    public static Color b2c = randomColor();
-
-    public static int b3x;
-    public static int b3y;
-    public static int b3s;
-    public static String b3d = "down";
-    public static Color b3c = randomColor();
-
-    public static int b4x;
-    public static int b4y;
-    public static int b4s;
-    public static String b4d = "down";
-    public static Color b4c = randomColor();
-
-    public static int b5x;
-    public static int b5y;
-    public static int b5s;
-    public static String b5d = "down";
-    public static Color b5c = randomColor();
-
-    public static int ballSize = 50;
-
-    public static void main(String[] args) {
-
+    public void go() {
         DrawingPanel panel = new DrawingPanel(width, height);
         panel.setBackground(Color.LIGHT_GRAY);
         Graphics g = panel.getGraphics();
-        g.setColor(Color.GREEN);
+
+        // System.out.println("1.1");
         getInitialStatus();
 
+        // System.out.println("1.2");
         while (true) {
-            for (int i = 1; i <= 5; i++) {
-
-                switch (i) {
-                case 1:
-                    if (b1d == "up") {
-                        b1y -= b1s;
-                        if (b1y <= 0) {
-                            b1d = "down";
-                        }
-                    } else {
-                        b1y += b1s;
-                        if (b1y >= height - ballSize) {
-                            b1d = "up";
-                        }
-                    }
-                    g.fillOval(b1x, b1y, ballSize, ballSize);
-                    break;
-                case 2:
-                    if (b2d == "up") {
-                        b2y -= b2s;
-                        if (b2y <= 0) {
-                            b2d = "down";
-                        }
-                    } else {
-                        b2y += b2s;
-                        if (b2y >= height - ballSize) {
-                            b2d = "up";
-                        }
-                    }
-                    g.fillOval(b2x, b2y, ballSize, ballSize);
-                    break;
-                case 3:
-                    if (b3d == "up") {
-                        b3y -= b3s;
-                        if (b3y <= 0) {
-                            b3d = "down";
-                        }
-                    } else {
-                        b3y += b3s;
-                        if (b3y >= height - ballSize) {
-                            b3d = "up";
-                        }
-                    }
-                    g.fillOval(b3x, b3y, ballSize, ballSize);
-                    break;
-                case 4:
-                    if (b4d == "up") {
-                        b4y -= b4s;
-                        if (b4y <= 0) {
-                            b4d = "down";
-                        }
-                    } else {
-                        b4y += b4s;
-                        if (b4y >= height - ballSize) {
-                            b4d = "up";
-                        }
-                    }
-                    g.fillOval(b4x, b4y, ballSize, ballSize);
-                    break;
-                case 5:
-                    if (b5d == "up") {
-                        b5y -= b5s;
-                        if (b5y <= 0) {
-                            b5d = "down";
-                        }
-                    } else {
-                        b5y += b5s;
-                        if (b5y >= height - ballSize) {
-                            b5d = "up";
-                        }
-                    }
-                    g.fillOval(b5x, b5y, ballSize, ballSize);
-                    break;
-                }
+            // System.out.println("1.3");
+            for (int i = 0; i < 10; i++) {
+                // System.out.println("1.3." + i);
+                allBalls[i].move(g);
             }
 
-            panel.sleep(100);
+            // adjusted sleep time up to mitigate flashing
+            panel.sleep(200);
             g.clearRect(0, 0, width, height);
         }
     }
 
-    public static void getInitialStatus() {
+    /**
+     * sets all the global ball variables to their initial values
+     */
+    public void getInitialStatus() {
+        allBalls[0] = new ball(rand.nextInt(width), 0, "down");
+        allBalls[1] = new ball(rand.nextInt(width), 0, "down");
+        allBalls[2] = new ball(rand.nextInt(width), 0, "down");
+        allBalls[3] = new ball(rand.nextInt(width), 0, "down");
+        allBalls[4] = new ball(rand.nextInt(width), 0, "down");
 
-        Random rand = new Random();
-        b1x = rand.nextInt(width - ballSize);
-        b2x = rand.nextInt(width - ballSize);
-        b3x = rand.nextInt(width - ballSize);
-        b4x = rand.nextInt(width - ballSize);
-        b5x = rand.nextInt(width - ballSize);
-
-        b1y = 0;
-        b2y = 0;
-        b3y = 0;
-        b4y = 0;
-        b5y = 0;
-
-        b1s = rand.nextInt(30) + 1;
-        b2s = rand.nextInt(30) + 1;
-        b3s = rand.nextInt(30) + 1;
-        b4s = rand.nextInt(30) + 1;
-        b5s = rand.nextInt(30) + 1;
-    }
-
-    public static Color randomColor() {
-        return new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
+        allBalls[5] = new ball(rand.nextInt(height), 0, "right");
+        allBalls[6] = new ball(rand.nextInt(height), 0, "right");
+        allBalls[7] = new ball(rand.nextInt(height), 0, "right");
+        allBalls[8] = new ball(rand.nextInt(height), 0, "right");
+        allBalls[9] = new ball(rand.nextInt(height), 0, "right");
     }
 
 }

@@ -1,15 +1,35 @@
-SEVERE	?	main	2016-11-02T03:43:14.038Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\Assignments\5\balls.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\Assignments\5\balls.java
+SEVERE	?	main	2016-11-08T01:38:29.877Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\Assignments\5\ballsClass.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\Assignments\5\ballsClass.java
 	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
 	at java.util.Optional.orElseThrow(Optional.java:290)
 	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.lambda$findSymbol$31(JavaLanguageServer.java:740)
-	at java.util.Optional.flatMap(Optional.java:241)
-	at org.javacs.JavaLanguageServer.findSymbol(JavaLanguageServer.java:739)
-	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:888)
-	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:116)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:966)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:106)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:126)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
+	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
+	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
+	at org.javacs.Main.run(Main.java:150)
+	at org.javacs.Main.main(Main.java:69)
+
+INFO	?	main	2016-11-08T01:38:32.018Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\Assignments\5\ballsClass.java
+SEVERE	?	main	2016-11-08T01:38:32.018Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\Assignments\5\ballsClass.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\Assignments\5\ballsClass.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
+	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
+	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
+	at org.javacs.JavaLanguageServer$1.didSave(JavaLanguageServer.java:241)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:204)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
 	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
