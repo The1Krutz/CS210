@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * animates some number of randomized balls moving across the screen
  */
-public class balls {
+public class ballsArray {
     public static Random rand = new Random();
 
     // dimensions of the drawing panel
