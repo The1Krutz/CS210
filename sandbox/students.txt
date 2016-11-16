@@ -1,4 +1,5 @@
-1 John m 2 William m
-3 Susan f
-4 Jack m
-5 Jennifer f
+1 John m 18
+2 William m 22
+3 Susan f 21
+4 Jack m 19
+5 Jennifer f 18
