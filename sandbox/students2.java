@@ -43,14 +43,13 @@ public class students2 {
         int femaleCount = 0;
         int maleTotalAge = 0;
         int femaleTotalAge = 0;
-        String nextName = "";
 
         // iterate over the file stream, processing each student and adding them
         // to the display if they match the gender being searched for
         while (input.hasNext()) {
             // skip id number
             input.nextInt();
-            nextName = input.next();
+            String nextName = input.next();
             String thisGender = input.next();
             int thisAge = input.nextInt();
             if (thisGender.equals("m")) {
@@ -68,22 +67,16 @@ public class students2 {
         double femaleAvgAge = (double)femaleTotalAge / femaleCount;
 
         // and display the summary to the console
-        System.out.println("We have " + maleCount + " male students.");
-        String[] ms = new String[maleStudents.size()];
-        maleStudents.toArray(ms);
-        for (int i = 0; i < ms.length; i++) {
-            System.out.println(ms[i]);
-        }
-        System.out.println("Average age is " + maleAvgAge);
-
-        System.out.println("\nWe have " + femaleCount + " female students.");
-        String[] fs = new String[femaleStudents.size()];
-        femaleStudents.toArray(fs);
-        for (int i = 0; i < fs.length; i++) {
-            System.out.println(fs[i]);
+        System.out.println(femaleCount + " female students.");
+        for (String s : femaleStudents) {
+            System.out.println(s);
         }
         System.out.println("Average age is " + femaleAvgAge);
 
-
+        System.out.println(maleCount + " male students.");
+        for (String s : maleStudents) {
+            System.out.println(s);
+        }
+        System.out.println("Average age is " + maleAvgAge);
     }
 }
