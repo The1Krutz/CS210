@@ -68,7 +68,7 @@ public class userName {
      * @return {String} user name entered by the user
      */
     public static String getNewUserName() {
-        System.out.println("Create a new user name. (must be 6+ characters, and cannot begin with a number or '?')");
+        System.out.println("\nCreate a new user name. (must be 6+ characters, and cannot begin with a number or '?')");
         return console.nextLine();
     }
 

@@ -5,11 +5,8 @@ public class ex8DuplicateGeneric {
         Integer[] dupeInts = { 1, 2, 3, 3, 4, 5, 6, 2 };
         String[] dupeStrings = { "Wilson", "Sherman", "Lynch", "Chancellor", "Graham", "Wilson", "Lynch" };
         /* +++++++++++++++++++++++++ */
-
         printDupes(dupeInts);
         printDupes(dupeStrings);
-
-
         /* +++++++++++++++++++++++++ */
     }
 
