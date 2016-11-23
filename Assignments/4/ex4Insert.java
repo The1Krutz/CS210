@@ -8,12 +8,20 @@ public static void main(String[] args) {
    // Insert an element in 3rd position of the array (index->3, value->12)  
    int Index_position = 3;  
    int newValue    = 12;  
-   System.out.println("Original Array : "+Arrays.toString(my_array));       
-     
+   System.out.println("Original Array : "+Arrays.toString(my_array));    
+// my code starts
 
+        int temp2 = 0;
+        int temp = myArray[index - 1];
+        myArray[index - 1] = newValue;
 
+        for (int i = index - 1; i < myArray.length; i++) {
+            temp2 = myArray[i];
+            myArray[i] = temp;
+            temp = temp2;
+        }
 
-
+// my code ends
    System.out.println("New Array: "+Arrays.toString(my_array));  
  }  
  }

@@ -1,94 +1,13 @@
-INFO	?	main	2016-11-18T06:04:19.307Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55283
-INFO	?	main	2016-11-18T06:04:19.583Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\sandbox\ex7DuplicateValue.java
-SEVERE	?	main	2016-11-18T06:04:19.591Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\ex7DuplicateValue.java
-org.javacs.ShowMessageException: Can't find configuration file for c:\Repos\CS210\sandbox\ex7DuplicateValue.java
-	at org.javacs.ShowMessageException.create(ShowMessageException.java:30)
-	at org.javacs.ShowMessageException.warning(ShowMessageException.java:21)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:198)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\ex7DuplicateValue.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
-	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:191)
-	... 13 more
-
-INFO	?	main	2016-11-18T06:04:22.817Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\sandbox\ex8DuplicateGeneric.java
-SEVERE	?	main	2016-11-18T06:04:22.817Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateGeneric.java
-org.javacs.ShowMessageException: Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateGeneric.java
-	at org.javacs.ShowMessageException.create(ShowMessageException.java:30)
-	at org.javacs.ShowMessageException.warning(ShowMessageException.java:21)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:198)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateGeneric.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
-	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:191)
-	... 13 more
-
-INFO	?	main	2016-11-18T06:04:28.575Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\sandbox\ex8DuplicateString.java
-SEVERE	?	main	2016-11-18T06:04:28.576Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateString.java
-org.javacs.ShowMessageException: Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateString.java
-	at org.javacs.ShowMessageException.create(ShowMessageException.java:30)
-	at org.javacs.ShowMessageException.warning(ShowMessageException.java:21)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:198)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateString.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
-	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:191)
-	... 13 more
-
-SEVERE	?	main	2016-11-18T06:04:28.578Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateGeneric.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateGeneric.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:225)
+INFO	?	main	2016-11-23T04:20:28.578Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55283
+INFO	?	main	2016-11-23T04:20:28.765Z	org.javacs.JavaLanguageServer#doLint	Lint [c:\Repos\Classwork\CS210\sandbox\e4Insert.java]
+INFO	?	main	2016-11-23T04:21:44.461Z	org.javacs.JavaLanguageServer#doLint	Lint [c:\Repos\Classwork\CS210\sandbox\ex6Reverse.java]
+SEVERE	?	main	2016-11-23T04:21:44.470Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\e4Insert.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\e4Insert.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.access$600(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:227)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:202)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
@@ -103,40 +22,14 @@ org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS2
 	at org.javacs.Main.run(Main.java:150)
 	at org.javacs.Main.main(Main.java:69)
 
-INFO	?	main	2016-11-18T06:04:32.731Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\sandbox\students2.java
-SEVERE	?	main	2016-11-18T06:04:32.731Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-org.javacs.ShowMessageException: Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-	at org.javacs.ShowMessageException.create(ShowMessageException.java:30)
-	at org.javacs.ShowMessageException.warning(ShowMessageException.java:21)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:198)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
-	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:191)
-	... 13 more
-
-SEVERE	?	main	2016-11-18T06:04:32.733Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateString.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\ex8DuplicateString.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:225)
+INFO	?	main	2016-11-23T04:22:05.375Z	org.javacs.JavaLanguageServer#doLint	Lint [c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java]
+SEVERE	?	main	2016-11-23T04:22:05.381Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex6Reverse.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex6Reverse.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.access$600(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:227)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:202)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
@@ -151,16 +44,17 @@ org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS2
 	at org.javacs.Main.run(Main.java:150)
 	at org.javacs.Main.main(Main.java:69)
 
-SEVERE	?	main	2016-11-18T06:04:39.261Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.lambda$findSymbol$31(JavaLanguageServer.java:740)
-	at java.util.Optional.flatMap(Optional.java:241)
-	at org.javacs.JavaLanguageServer.findSymbol(JavaLanguageServer.java:739)
-	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:888)
-	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:116)
+SEVERE	?	main	2016-11-23T04:22:06.221Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
+	at org.javacs.JavaLanguageServer.lambda$doHover$34(JavaLanguageServer.java:983)
+	at java.util.Optional.ifPresent(Unknown Source)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:982)
+	at org.javacs.JavaLanguageServer.access$000(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:118)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
@@ -175,16 +69,17 @@ org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS2
 	at org.javacs.Main.run(Main.java:150)
 	at org.javacs.Main.main(Main.java:69)
 
-SEVERE	?	main	2016-11-18T06:04:40.881Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.lambda$findSymbol$31(JavaLanguageServer.java:740)
-	at java.util.Optional.flatMap(Optional.java:241)
-	at org.javacs.JavaLanguageServer.findSymbol(JavaLanguageServer.java:739)
-	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:888)
-	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:116)
+SEVERE	?	main	2016-11-23T04:22:15.235Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
+	at org.javacs.JavaLanguageServer.lambda$doHover$34(JavaLanguageServer.java:983)
+	at java.util.Optional.ifPresent(Unknown Source)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:982)
+	at org.javacs.JavaLanguageServer.access$000(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:118)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
@@ -199,160 +94,17 @@ org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS2
 	at org.javacs.Main.run(Main.java:150)
 	at org.javacs.Main.main(Main.java:69)
 
-INFO	?	main	2016-11-18T06:04:47.913Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\sandbox\test.java
-SEVERE	?	main	2016-11-18T06:04:47.913Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\test.java
-org.javacs.ShowMessageException: Can't find configuration file for c:\Repos\CS210\sandbox\test.java
-	at org.javacs.ShowMessageException.create(ShowMessageException.java:30)
-	at org.javacs.ShowMessageException.warning(ShowMessageException.java:21)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:198)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\test.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
-	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:191)
-	... 13 more
-
-SEVERE	?	main	2016-11-18T06:04:47.916Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\students2.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:225)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:202)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-
-INFO	?	main	2016-11-18T06:04:51.989Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\sandbox\students.java
-SEVERE	?	main	2016-11-18T06:04:51.989Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\students.java
-org.javacs.ShowMessageException: Can't find configuration file for c:\Repos\CS210\sandbox\students.java
-	at org.javacs.ShowMessageException.create(ShowMessageException.java:30)
-	at org.javacs.ShowMessageException.warning(ShowMessageException.java:21)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:198)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\students.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
-	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:191)
-	... 13 more
-
-SEVERE	?	main	2016-11-18T06:04:51.991Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\test.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\test.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:225)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:202)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-
-INFO	?	main	2016-11-18T06:04:58.191Z	org.javacs.JavaLanguageServer#doLint	Lint c:\Repos\CS210\sandbox\checkID.java
-SEVERE	?	main	2016-11-18T06:04:58.192Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-org.javacs.ShowMessageException: Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-	at org.javacs.ShowMessageException.create(ShowMessageException.java:30)
-	at org.javacs.ShowMessageException.warning(ShowMessageException.java:21)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:198)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:301)
-	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:29)
-	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:191)
-	... 13 more
-
-SEVERE	?	main	2016-11-18T06:04:58.193Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\students.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\students.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:225)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:202)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-
-SEVERE	?	main	2016-11-18T06:05:03.784Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.lambda$findSymbol$31(JavaLanguageServer.java:740)
-	at java.util.Optional.flatMap(Optional.java:241)
-	at org.javacs.JavaLanguageServer.findSymbol(JavaLanguageServer.java:739)
-	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:888)
-	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:116)
+SEVERE	?	main	2016-11-23T04:25:02.010Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
+	at org.javacs.JavaLanguageServer.lambda$doHover$34(JavaLanguageServer.java:983)
+	at java.util.Optional.ifPresent(Unknown Source)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:982)
+	at org.javacs.JavaLanguageServer.access$000(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:118)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
@@ -367,42 +119,110 @@ org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS2
 	at org.javacs.Main.run(Main.java:150)
 	at org.javacs.Main.main(Main.java:69)
 
-SEVERE	?	main	2016-11-18T06:05:04.684Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.lambda$findSymbol$31(JavaLanguageServer.java:740)
-	at java.util.Optional.flatMap(Optional.java:241)
-	at org.javacs.JavaLanguageServer.findSymbol(JavaLanguageServer.java:739)
-	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:888)
-	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:116)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
-	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
-	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
-	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
-	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
-	at org.javacs.Main.run(Main.java:150)
-	at org.javacs.Main.main(Main.java:69)
-
-SEVERE	?	main	2016-11-18T06:05:05.094Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\CS210\sandbox\checkID.java
-	at org.javacs.JavaLanguageServer.lambda$findCompiler$22(JavaLanguageServer.java:453)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:453)
-	at org.javacs.JavaLanguageServer.lambda$findSymbol$31(JavaLanguageServer.java:740)
-	at java.util.Optional.flatMap(Optional.java:241)
-	at org.javacs.JavaLanguageServer.findSymbol(JavaLanguageServer.java:739)
-	at org.javacs.JavaLanguageServer.gotoDefinition(JavaLanguageServer.java:766)
-	at org.javacs.JavaLanguageServer$1.definition(JavaLanguageServer.java:126)
+SEVERE	?	main	2016-11-23T04:25:02.224Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
+	at org.javacs.JavaLanguageServer.lambda$gotoDefinition$32(JavaLanguageServer.java:846)
+	at java.util.Optional.ifPresent(Unknown Source)
+	at org.javacs.JavaLanguageServer.gotoDefinition(JavaLanguageServer.java:845)
+	at org.javacs.JavaLanguageServer$1.definition(JavaLanguageServer.java:128)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:134)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
+	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
+	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
+	at org.javacs.Main.run(Main.java:150)
+	at org.javacs.Main.main(Main.java:69)
+
+SEVERE	?	main	2016-11-23T04:25:02.691Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
+	at org.javacs.JavaLanguageServer.lambda$gotoDefinition$32(JavaLanguageServer.java:846)
+	at java.util.Optional.ifPresent(Unknown Source)
+	at org.javacs.JavaLanguageServer.gotoDefinition(JavaLanguageServer.java:845)
+	at org.javacs.JavaLanguageServer$1.definition(JavaLanguageServer.java:128)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:134)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
+	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
+	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
+	at org.javacs.Main.run(Main.java:150)
+	at org.javacs.Main.main(Main.java:69)
+
+SEVERE	?	main	2016-11-23T04:25:07.405Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
+	at org.javacs.JavaLanguageServer.lambda$doHover$34(JavaLanguageServer.java:983)
+	at java.util.Optional.ifPresent(Unknown Source)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:982)
+	at org.javacs.JavaLanguageServer.access$000(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:118)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
+	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
+	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
+	at org.javacs.Main.run(Main.java:150)
+	at org.javacs.Main.main(Main.java:69)
+
+INFO	?	main	2016-11-23T04:25:17.180Z	org.javacs.JavaLanguageServer#doLint	Lint [c:\Repos\Classwork\CS210\sandbox\ex8DuplicateString.java]
+SEVERE	?	main	2016-11-23T04:25:17.186Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex7DuplicateValue.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.access$600(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:227)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:202)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
+	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
+	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
+	at org.javacs.Main.run(Main.java:150)
+	at org.javacs.Main.main(Main.java:69)
+
+SEVERE	?	main	2016-11-23T04:25:53.635Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex8DuplicateString.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Repos\Classwork\CS210\sandbox\ex8DuplicateString.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.access$600(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.didClose(JavaLanguageServer.java:227)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:202)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:194)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
 	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)

@@ -5,11 +5,16 @@ public class ex5MinMax {
   static int max;  
   static int min;  
     public static void max_min(int my_array[]) {  
+// my code starts
 
+for(int n : my_array){
+    if(n<min)
+    min=n;
+    if(n>max)
+    max=n;
+}
 
-
-
-
+// my code ends
 }  
   
     public static void main(String[] args) {  

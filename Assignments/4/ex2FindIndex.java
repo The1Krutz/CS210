@@ -2,11 +2,14 @@
 
 public class ex2FindIndex {  
        public static int  findIndex (int[] my_array, int t) {  
+// my code starts
+
+for(int i=0;i<my_array.length;i++)
+  if(my_array[i] == t)
+  return i;
 
 
-
-
-
+// my code ends
 }      
     public static void main(String[] args) {  
       int[] my_array = new int[] {25, 10, 55, 65, 36, 92, 77, 8, 13, 79};  
