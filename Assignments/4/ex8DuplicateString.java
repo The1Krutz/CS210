@@ -1,10 +1,12 @@
 // 8. Write a Java program to find the duplicate values of an array of string values.
 
-public class ex8DuplicateString {  
-public static void main(String[] args)   
-    {  
-      String[] my_array = {"Wilson", "Sherman", "Lynch", "Chancellor", "Graham", "Wilson", "Lynch"};  
-// my code starts
+import java.util.*;
+
+public class ex8DuplicateString {
+    public static void main(String[] args)
+    {
+        String[] my_array = { "Wilson", "Sherman", "Lynch", "Chancellor", "Graham", "Wilson", "Lynch" };
+        // my code starts
 
         ArrayList<String> alreadySeen = new ArrayList<String>();
         ArrayList<String> duplicates = new ArrayList<String>();
@@ -20,8 +22,8 @@ public static void main(String[] args)
             }
         }
 
-// my code ends
-  }      
+        // my code ends
+    }
 }
 //Duplicate Element is : Wilson
-//Duplicate Element is : Lynch 
+//Duplicate Element is : Lynch
