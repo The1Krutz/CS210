@@ -4,7 +4,6 @@ import java.util.*;
 
 public class ex4Insert {
     public static void main(String[] args) {
-
         int[] my_array = new int[] { 25, 10, 55, 65, 36, 92, 77, 8, 13, 79 };
         // Insert an element in 3rd position of the array (index->3, value->12)
         int Index_position = 3;

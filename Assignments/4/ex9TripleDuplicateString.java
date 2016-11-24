@@ -1,5 +1,5 @@
 // 9. Write a Java program to find the TRIPLE duplicate values of an array of string values.
-//
+
 import java.util.*;
 
 public class ex9TripleDuplicateString {
@@ -13,8 +13,10 @@ public class ex9TripleDuplicateString {
         // loop through all strings in the array, and keep a count of how many times each unique string occurs
         for (int i = 0; i < my_array.length; i++) {
             if (dupes.containsKey(my_array[i])) {
+                // if key exists, increment its counter
                 dupes.put(my_array[i], dupes.get(my_array[i]) + 1);
             } else {
+                // if key doesn't exist, add it with count 1
                 dupes.put(my_array[i], 1);
             }
         }
