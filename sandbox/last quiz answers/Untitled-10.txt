@@ -1,0 +1,20 @@
+public class classEx1{
+public static triArea t = new triArea();
+
+public static void main(String[] args) {
+t.w = 10;
+t.h=10;
+double area = t.area();
+System.out.println("The area of triangle is " + area);
+}
+}
+
+class triArea {
+int w;
+int h;
+
+public double area() {
+return (double)h*w/2;
+}
+}
+// The area of triangle is 50.0

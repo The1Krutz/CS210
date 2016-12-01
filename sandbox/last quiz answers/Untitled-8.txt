@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class ex0_2BallsArrayColor {
+int howMany=10;
+
+public static Color[] color= new Color[howMany];
+
+public static Color color(){
+Random rand= new Random();
+// my code starts
+Color myColor = new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256));
+// my code ends
+return myColor;
+}
+
+public static void main(String[] args) {
+// color initialization 
+for (int i=0;i<howMany; i++){
+color[i]=color();
+} 
+}
+}

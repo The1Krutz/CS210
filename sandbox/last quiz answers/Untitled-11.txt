@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class classEx2{
+public static twoPoints p = new twoPoints();
+
+public static void main(String[] args) {
+
+Random rand = new Random();
+
+p.x1 = rand.nextInt(200);
+p.x2 = rand.nextInt(200);
+p.y1 = rand.nextInt(200);
+p.y2 = rand.nextInt(200);
+
+double distance =p.distance();
+
+System.out.println("Point (" + p.x1 + " , " + p.y1 + ") - (" + p.x2 +" , " + p.y2 + ")");
+System.out.printf("The area of triangle is %.2f\n ", distance);
+}
+}
+
+
+class twoPoints {
+int x1;
+int x2;
+int y1;
+int y2;
+
+public double distance() {
+double length = Math.sqrt(Math.pow((x1-x2), 2) + Math.pow(y1-y2, 2)); 
+return length;
+}
+}
+//Point (1 , 2) - (187 , 132)
+//The area of triangle is 226.93

@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class arrayList2 {
+public static void main(String args[]) {
+ArrayList<student> myArray = new ArrayList<>();
+for(int i=0; i < 3; i++){
+// my code starts
+student newStudent = new student();
+newStudent.name = "kim"+i;
+newStudent.age=21;
+// my code ends
+}
+for (int i = 0; i < myArray.size(); i++){
+System.out.format("[%d] = %s %s %n", i, myArray.get(i).name, myArray.get(i).age);
+}
+System.out.println();
+}
+}
+
+class student {
+String id;
+String name;
+String gender;
+int age;
+}
+// output:
+// [0] = kim0 21 
+// [1] = kim1 21 
+// [2] = kim2 21
